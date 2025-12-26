@@ -55,9 +55,9 @@ document.addEventListener("keydown", e => {
   //known the element
   const el = e.target;
   if (!el.form) return;
-
- const fields = Array.from(el.form.elements)
-  .filter(el => !el.matches("button, [type=submit]"));
+ const fields = [...el.form.elements].filter(f =>
+    f.tagName !== "BUTTON" && f.type !== "submit"
+  );
 
   //`known` the current index 
   const i = fields.indexOf(el);
