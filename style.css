@@ -531,6 +531,11 @@ footer {
     border-color: #00b4db;
     box-shadow: 0 0 0 4px rgba(0, 180, 219, 0.15);
 }
+/* إصلاح التاريخ    */
+.form-group input[type="date"] {
+    padding-left: 45px !important;
+    text-align: right;
+}
 .main-content {
     padding-top: 70px;
 }
