@@ -531,23 +531,7 @@ footer {
     border-color: #00b4db;
     box-shadow: 0 0 0 4px rgba(0, 180, 219, 0.15);
 }
-/* إصلاح التاريخ    */
-/* توحيد شكل حقل التاريخ مع باقي الحقول */
-.form-group input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 
-  width: 100%;
-  padding: 16px 20px;
-  height: 56px;              /* 👈 هذا أهم سطر */
-  border-radius: 14px;
-  border: 2px solid #edf2f7;
-  background-color: #f9fafb;
-  font-size: 15px;
-  color: #1f2937;
-  font-family: 'Cairo', sans-serif;
-}
 
 .main-content {
     padding-top: 70px;
