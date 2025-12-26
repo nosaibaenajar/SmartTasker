@@ -22,38 +22,16 @@ function login(event) {
   }
 }
 
-// manager pages: add task & add employee
-
-document.addEventListener("keydown", e => {
-  if (e.key !== "Enter") return;
-
-  const el = e.target;
-  if (!el.form) return;
-
-  const fields = [...el.form.elements].filter(f =>
-    f.tagName !== "BUTTON" && f.type !== "submit"
-  );
-
-  const i = fields.indexOf(el);
-
-  if (fields[i + 1]) {
-    e.preventDefault();
-    fields[i + 1].focus();
-  } else {
-    // آخر حقل → امنع أي تصرف
-    e.preventDefault();
-  }
-});
-
-
 // home page status counter
 
 document.addEventListener("DOMContentLoaded",()=>{
-  let d=0;
+  let d=0; // no counting happend
   const c=document.querySelectorAll(".counter"),
-        s=document.querySelector(".stats-section");
+        s=document.querySelector(".stats-container");
 
+  // scrolling moniter
   new IntersectionObserver(([e],o)=>{
+    // if you not in stats section || d=1 
     if(!e.isIntersecting||d) return;
     d=1;
     c.forEach(x=>{
@@ -67,3 +45,29 @@ document.addEventListener("DOMContentLoaded",()=>{
     o.disconnect();
   },{threshold:.4}).observe(s);
 });
+
+// manager pages: add task & add employee enter
+
+// e=event
+document.addEventListener("keydown", e => {
+  if (e.key !== "Enter") return;
+
+  //known the element
+  const el = e.target;
+  if (!el.form) return;
+
+ const fields = Array.from(el.form.elements)
+  .filter(el => !el.matches("button, [type=submit]"));
+
+  //`known` the current index 
+  const i = fields.indexOf(el);
+
+  if (fields[i + 1]) {
+    e.preventDefault();
+    fields[i + 1].focus();
+  } else {
+    // آخر حقل → امنع أي تصرف
+    e.preventDefault();
+  }
+});
+
