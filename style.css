@@ -602,6 +602,22 @@ footer {
       justify-content: space-between;
       margin: 15px 0 0;
     }
+    .mini-btn-gray{
+      border: 0;
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 10px 18px rgba(15, 23, 42, 0.10);
+      background: #e5e7eb;
+      color: #6b7280;
+    }
+    .mini-btn-gray:hover{
+      background: #e5e7eb;
+      color: #6b7280;
+      transform: scale(1);
+      box-shadow: 0px 0px 18px rgba(15, 23, 42, 0.10);
+    }
     .date{
       font-size: 20px;
       font-weight: 900;
