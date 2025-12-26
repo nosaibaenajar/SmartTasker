@@ -781,13 +781,13 @@ footer {
   }
      /* about */
       .main-content-Employee {
-        padding: 30px 15px; 
+        padding: 20px 15px; 
     }
     .about-card {
         width: 100%;       
         max-width: 100%;
         padding: 30px 20px; 
-        margin: 20px 0;   
+        margin: 10px 0;   
         
     }
     .about-logo img {
