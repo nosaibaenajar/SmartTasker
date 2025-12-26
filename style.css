@@ -533,8 +533,7 @@ footer {
 }
 /* إصلاح التاريخ    */
 .form-group input[type="date"] {
-    padding-left: 45px !important;
-    text-align: right;
+      appearance: none;
 }
 .main-content {
     padding-top: 70px;
