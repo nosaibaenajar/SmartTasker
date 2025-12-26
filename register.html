@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> انشاء حساب | Smart Tasker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photo/Favicon.ico" type="image/x-icon">
+
+ <style>
+        body {
+            background-image: url(photo/back.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;  
+            height: 100vh;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+      <div class="container">
+        <div class="curved-shape"></div>
+        <div class="form-box Register">
+              <img src="photo/smartTaskerIcon.png" alt="" style="width: 120px ;height: 120px;">
+             <form action="manager.html">
+                <div class="input-box">
+                    <label for="">اسم المستخدم</label> 
+                    <input type="text" required placeholder="username" >
+                    <!-- <i class="bx bxs-user">👤</i> -->
+                </div>
+                 <div class="input-box">
+                    <label for="">البريد الإلكتروني</label> 
+                    <input type="email" required placeholder="username@gmail.com">
+                    <!-- <i class="bx bxs-user">✉️</i> -->
+                </div>
+                <div class="input-box">
+                    <label for="">كلمة المرور</label>
+                    <input type="password" required placeholder="********" maxlength="8">
+                    <!-- <i class="bx bxs-lock">🔒</i> -->
+                </div>
+                <div class="input-box">
+                    <button class="btn" type="submit"> إنشاء حساب </button>
+                </div>
+                <div class="regi-link">
+                    <p>هل لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                </div>
+             </form>
+        </div>
+        <div class="info-content Register">
+            <div>
+             <h2>هل أنت مدير جديد هنا؟</h2>
+             <p>يمكنك إنشاء حساب لتبدأ بإدارة مشاريعك وتنظيم مهام فريقك بسهولة </p>
+</div>
+             <a href="index.html"><button class="btn back-home">←</button></a>
+        </div>
+    </div>
+</body>
+</html>

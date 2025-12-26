@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اضافة موظف | Smart Tasker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photo/Favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+       <!-- ======= header ======= -->
+    <header>
+        <div class="logo">
+            <img src="photo/icon_white_transparent.png" alt="logo" class="logo-img">
+             Smart Tasker
+        </div>
+        <div id="links">
+        
+        </div>
+        <a  href="login.html" class="btn btn-head">تسجيل خروج</a>
+    </header>
+
+    <!-- ===== Dashboard ===== -->
+  <div class="dashboard">
+
+       <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <a href="manager.html" >📊 عرض المهام</a>
+            <a href="addTask.html">📝 إضافة مهمة جديدة</a>
+            <a href="#addEmployee"  class="active">👤 إضافة عضو جديد</a> 
+        </div>
+</div>
+         <!-- Content -->
+          <main class="main-content">
+
+           <div class="form-card">
+            <h2 class="form-title">تسجيل موظف جديد</h2>
+
+                <form class="form">
+
+                    <div class="form-group">
+                        <label>الاسم الكامل</label>
+                        <input type="text" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>اسم المستخدم</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>كلمة المرور</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <button class="btn">إضافة العضو</button>
+                </form>
+            </div>
+        </div>
+
+    
+    </main>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

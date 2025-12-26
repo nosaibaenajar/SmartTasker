@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة مهمة | Smart Tasker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photo/Favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<!-- ===== Header ===== -->
+<header class="main-header">
+    <div class="logo">
+        <img src="photo/icon_white_transparent.png" class="logo-img">
+        Smart Tasker
+    </div>
+    <a href="login.html" class="btn btn-head">تسجيل خروج</a>
+</header>
+
+<!-- ===== Dashboard ===== -->
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <nav class="sidebar-menu">
+            <a href="manager.html">📊 عرض المهام</a>
+            <a href="#" class="active">📝 إضافة مهمة جديدة</a>
+            <a href="addEmployee.html">👤 إضافة عضو جديد</a>
+        </nav>
+    </aside>
+
+    <!-- Content -->
+    <main class="main-content">
+
+        <div class="form-card">
+            <h2 class="form-title">إسناد مهمة جديدة</h2>
+
+            <form class="form">
+
+                <div class="form-group">
+                    <label>عنوان المهمة</label>
+                    <input type="text" autofocus>
+                </div>
+
+                <div class="form-group">
+                    <label>نوع المهمة</label>
+                    <select>
+                        <option style="color: #f27036;">عاجلة</option>
+                        <option style="color: #00b4db;">غير عاجلة</option>
+                        <option style="color: #ff3131;">طارئة</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>تعيين للموظف</label>
+                    <select>
+                        <option>محمد علي</option>
+                        <option>سارة أحمد</option>
+                        <option>محمد احمد</option>
+                        <option>فاطمة يوسف</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>تاريخ التسليم</label>
+                    <input type="date">
+                </div>
+
+                <button class="btn">حفظ المهمة</button>
+
+            </form>
+        </div>
+
+    </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | Smart Tasker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photo/Favicon.ico" type="image/x-icon">
+
+ <style>
+        body {
+            background-image: url(photo/back.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;  
+            height: 100vh;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body >
+   
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="form-box Login">
+             <!-- <h2>Login</h2> -->
+              <img src="photo/smartTaskerIcon.png" alt="" style="width: 120px ;height: 120px;">
+             
+              <form onsubmit="login(event)">
+                <div class="input-box">
+                    <label for="">اسم المستخدم</label> 
+                    <input type="text" required  placeholder="username" id="username" >
+                   
+                </div>
+                <div class="input-box">
+                    <label for="">كلمة المرور</label>
+                    <input type="password" required placeholder="********" maxlength="8">
+                    
+                </div>
+                <div class="input-box">
+                    <button class="btn" type="submit" >تسجيل دخول </button>
+                </div>
+                <div class="regi-link">
+                    <p>هل أنت مدير جديد؟ <a href="register.html">إنشاء حساب مدير</a></p>
+                </div>
+             </form>
+             <div>
+               <a href="index.html"><button class="btn back-home">←</button></a>
+        </div>
+        </div>
+        <div class="info-content Login">
+            <div>
+             <h2>هل أنت عضو في فريق؟</h2>
+             <p> يمكنك تسجيل الدخول للاطلاع على مهامك وتتبع تقدمك في العمل</p>
+</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
